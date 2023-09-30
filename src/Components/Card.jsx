@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
+import { CardContainer, EventInfo, EventName } from "./style";
+import { Link } from "react-router-dom";
 
-function Card({event}) {
+function Card({ event }) {
   return (
-    <div className="event">
-      <h2>{event.name}</h2>
-      <p>Data: {event.date}</p>
-      <p>Local: {event.location}</p>
-      <p>Descrição: {event.description}</p>
-      <p>Preço: R$ {event.price}</p>
-      <button>Comprar Ingresso</button>
-      <button>Deletar Evento</button>
-    </div>
-  )
+      <CardContainer>
+        <EventName>{event.name}</EventName>
+        <EventInfo>Data: {event.date}</EventInfo>
+        <EventInfo>Local: {event.location}</EventInfo>
+        <EventInfo>Descrição: {event.description}</EventInfo>
+        <p>Preço: R$ {event.price}</p>
+        <Link to={`/compra/${event.id}`}><button>Comprar Evento</button></Link>
+        <button>Deletar Evento</button>
+      </CardContainer>
+  );
 }
 
-export default Card
+export default Card;

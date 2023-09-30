@@ -26,7 +26,9 @@ function Events() {
       <h1>Events</h1>
 
       {eventos ? (
-        eventos.map((evento) => <Card key={evento.key} event={evento} />)
+        eventos.map((evento) => (
+            <Card key={evento.key} event={evento} />
+        ))
       ) : (
         <p>Não encontrado ou não carregado</p>
       )}
