@@ -1,0 +1,37 @@
+{
+    "events": [
+      {
+        "id": 1,
+        "name": "Concerto de Rock",
+        "date": "2023-10-15",
+        "location": "Estádio Principal",
+        "description": "Um incrível concerto de rock com bandas famosas.",
+        "price": 50.0
+      },
+      {
+        "id": 2,
+        "name": "Conferência de Tecnologia",
+        "date": "2023-11-05",
+        "location": "Centro de Convenções",
+        "description": "Uma conferência abrangente sobre as últimas tendências tecnológicas.",
+        "price": 30.0
+      },
+      {
+        "id": 3,
+        "name": "Festival de Cinema",
+        "date": "2023-12-20",
+        "location": "Teatro Municipal",
+        "description": "Um festival de cinema com exibições de filmes premiados.",
+        "price": 25.0
+      },
+      {
+        "id": 4,
+        "name": "Exposição de Arte",
+        "date": "2024-01-10",
+        "location": "Galeria de Arte",
+        "description": "Uma exposição de arte contemporânea com obras de artistas locais.",
+        "price": 10.0
+      }
+    ]
+  }
+  
